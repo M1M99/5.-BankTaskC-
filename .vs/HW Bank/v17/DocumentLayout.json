@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\helpers\\randomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\helpers\\randomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|c:\\users\\asus\\desktop\\fbas_nov_23_7_az\\c#\\lesson7interfaces\\atmhomework\\helpers\\stringtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9D55C5-1196-4E0B-8A52-E6CB7AF070B9}|AtmHomework\\AtmHomework.csproj|solutionrelative:atmhomework\\helpers\\stringtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\Card.cs",
+              "RelativeToolTip": "AtmHomework\\Models\\Card.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAnwCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T05:58:59.835Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\Bank.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Models\\Bank.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\Bank.cs",
+              "RelativeToolTip": "AtmHomework\\Models\\Bank.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowFMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T05:56:19.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Program.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Program.cs",
+              "RelativeToolTip": "AtmHomework\\Program.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T05:55:50.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StringType.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Helpers\\StringType.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Helpers\\StringType.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Helpers\\StringType.cs",
+              "RelativeToolTip": "AtmHomework\\Helpers\\StringType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:08:13.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RandomGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Helpers\\RandomGenerator.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Helpers\\RandomGenerator.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Helpers\\RandomGenerator.cs",
+              "RelativeToolTip": "AtmHomework\\Helpers\\RandomGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:07:08.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TextFile1.txt",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\TextFile1.txt",
+              "RelativeDocumentMoniker": "AtmHomework\\TextFile1.txt",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\TextFile1.txt",
+              "RelativeToolTip": "AtmHomework\\TextFile1.txt",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-05T06:17:32.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AtmHomework\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\Models\\User.cs",
+              "RelativeToolTip": "AtmHomework\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T06:00:47.816Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
