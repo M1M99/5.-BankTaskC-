@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AtmHomework.Helpers
 {
-    internal static class RandomGenerator
+    internal static class RNDNumbers
     {
         private static readonly Random _random = new Random();
 

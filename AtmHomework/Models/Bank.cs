@@ -23,7 +23,7 @@ namespace AtmHomework.Models
         {
             foreach (var user in users)
             {
-                Console.WriteLine($"{user}");
+                Console.WriteLine(user);
             }
         }
 
@@ -43,7 +43,7 @@ namespace AtmHomework.Models
         public void Logout() => currentUser = null;
 
 
-        public void Withdraw(decimal amount)
+        public void Cash1(decimal amount)
         {
             if (currentUser is null)
                 throw new Exception();
@@ -54,7 +54,6 @@ namespace AtmHomework.Models
             Console.Write("Your Balance : ");
             Console.WriteLine(currentUser.CreditCard.Balance);
         }
-
         public decimal GetBalance()
         {
             try
@@ -68,17 +67,20 @@ namespace AtmHomework.Models
             }
             return currentUser.CreditCard.Balance;
         }
-        public void CardToCard(string? recieverPan, decimal amount)
+        public void CardToCard(string? PanForCTC, decimal amount)
         {
             for (var i = 0; i < users.Length; i++)
             {
                 try
                 {
-                    if (users[i].CreditCard.Pan == recieverPan)
+                    if (users[i].CreditCard.Pan == PanForCTC)
                     {
-                        users[i].CreditCard.Balance -= amount;
-                        currentUser.CreditCard.Balance += amount;
+                        users[i].CreditCard.Balance += amount;
+                        currentUser.CreditCard.Balance -= amount;
                         Console.WriteLine("Successful Cart To Cart");
+                        System.Threading.Thread.Sleep(2000);
+                        Console.Clear();
+                        ShowAllUsers();
                         continue;
                     }
                 }
@@ -86,8 +88,8 @@ namespace AtmHomework.Models
                     Console.WriteLine(ex.Message);
                 }
             }
+                
         }
-
         public static void showMenu()
         {
             Console.WriteLine("1. Balance");
@@ -95,7 +97,7 @@ namespace AtmHomework.Models
             string? choise = (Console.ReadLine());
             if (choise is not null || choise == "1")
             {
-               
+               //
             }
             Console.WriteLine("Balans : ");
         }

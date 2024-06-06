@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\AtmHomework.csproj": {}
+    "C:\\Users\\Musay_yy33\\Desktop\\Bank-TaskV\\AtmHomework\\AtmHomework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\AtmHomework.csproj": {
+    "C:\\Users\\Musay_yy33\\Desktop\\Bank-TaskV\\AtmHomework\\AtmHomework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\AtmHomework.csproj",
+        "projectUniqueName": "C:\\Users\\Musay_yy33\\Desktop\\Bank-TaskV\\AtmHomework\\AtmHomework.csproj",
         "projectName": "AtmHomework",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\AtmHomework.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\FBAS_Nov_23_7_az\\C#\\Lesson7Interfaces\\AtmHomework\\obj\\",
+        "projectPath": "C:\\Users\\Musay_yy33\\Desktop\\Bank-TaskV\\AtmHomework\\AtmHomework.csproj",
+        "packagesPath": "C:\\Users\\Musay_yy33\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Musay_yy33\\Desktop\\Bank-TaskV\\AtmHomework\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Musay_yy33\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

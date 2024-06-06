@@ -59,6 +59,7 @@ while (true)
             string otherpan = string.Empty;
             try
             {
+                Console.WriteLine($"Your Balance : {bank.currentUser.CreditCard.Balance}");
                 Console.Write("Enter Amount For Cart To Cart : ");
                 amountforctc = decimal.Parse(Console.ReadLine());
                 if (amountforctc > bank.currentUser.CreditCard.Balance)
@@ -99,22 +100,22 @@ while (true)
                 if (choiser == 1 && bank.currentUser.CreditCard.Balance >= 10)
                 {
                     Console.Clear();
-                    bank.Withdraw(10);
+                    bank.Cash1(10);
                 }
                 else if (choiser == 2 && bank.currentUser.CreditCard.Balance >= 20)
                 {
                     Console.Clear();
-                    bank.Withdraw(20);
+                    bank.Cash1(20);
                 }
                 else if (choiser == 3 && bank.currentUser.CreditCard.Balance >= 50)
                 {
                     Console.Clear();    
-                    bank.Withdraw(50);
+                    bank.Cash1(50);
                 }
                 else if (choiser == 4 && bank.currentUser.CreditCard.Balance >= 100)
                 {
                     Console.Clear();
-                    bank.Withdraw(100);
+                    bank.Cash1(100);
                 }
                 else if (choiser == 5)
                 {
@@ -123,7 +124,7 @@ while (true)
                     Console.WriteLine("How Much Money :");
                     if (bank.currentUser.CreditCard.Balance >= amount && bank.currentUser.CreditCard is not null)
                     {
-                        bank.Withdraw(amount);
+                        bank.Cash1(amount);
                     }
                 }
                 else if (choiser == 6)

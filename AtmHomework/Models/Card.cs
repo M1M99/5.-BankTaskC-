@@ -9,17 +9,17 @@ namespace AtmHomework.Models
 {
     internal class Card
     {
-        public string Pan { get; init; }
-        public string Pin { get; init; }
-        public string Cvc { get; init; }
-        public string ExpireDate { get; init; }
+        public string Pan { get; set; }
+        public string Pin { get; set; }
+        public string CVC { get; set; }
+        public string ExpireDate { get; set; }
         public decimal Balance { get; set; }
 
         public Card(decimal amount, int year)
         {
-            Pan = RandomGenerator.GenerateString(16, StringType.Numeric);
-            Pin = RandomGenerator.GenerateString(4, StringType.Numeric);
-            Cvc = RandomGenerator.GenerateString(3, StringType.Numeric);
+            Pan = RNDNumbers.GenerateString(16, StringType.Numeric);
+            Pin = RNDNumbers.GenerateString(4, StringType.Numeric);
+            CVC = RNDNumbers.GenerateString(3, StringType.Numeric);
             Balance = amount;
             ExpireDate = DateTime.Now.AddYears(year).ToString($"MM/yy");
         }
@@ -30,7 +30,7 @@ namespace AtmHomework.Models
 
         public override string ToString()
         {
-            return $"{Pan}  {Pin}  {Cvc}  {ExpireDate}  {Balance}";
+            return $"{Pan}  {Pin}  {CVC}  {ExpireDate}  {Balance}";
         }
     }
 }
