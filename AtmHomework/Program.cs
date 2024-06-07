@@ -2,7 +2,7 @@
 using AtmHomework.Models;
 
 Bank bank = new();
-bank.ShowAllUsers();
+bank.ShowUsers();
 
 while (true)
 {
@@ -48,7 +48,7 @@ while (true)
         else if (choise == "4")
         {
             Console.Clear();
-            bank.ShowAllUsers();
+            bank.ShowUsers();
             bank.Logout();
             goto login;
         }
@@ -76,7 +76,7 @@ while (true)
         u1:
             try
             {
-                bank.ShowAllUsers();
+                bank.ShowUsers();
                 Console.Write("Enter Pan : ");
                 otherpan = Console.ReadLine();
                 bank.CardToCard(otherpan, amountforctc);
@@ -91,46 +91,108 @@ while (true)
         {
         checkyourbalace:
             Console.Clear();
-            decimal amount;
+            decimal amount1;
+            Console.Write($"Your Balance : ");
+            if(bank.currentUser.CreditCard.Balance < 0)
+            {
+                bank.currentUser.CreditCard.Balance = 0;
+            }
+            Console.WriteLine(bank.currentUser.CreditCard.Balance);
+
             try
             {
                 Console.WriteLine($"1. 10Azn\n2. 20Azn\n3. 50Azn\n4. 100Azn\n5. Write Yourself\n6. LogOut");
                 Console.Write("Choise : ");
                 int choiser = int.Parse(Console.ReadLine());
-                if (choiser == 1 && bank.currentUser.CreditCard.Balance >= 10)
+                if (choiser == 1 )
                 {
                     Console.Clear();
                     bank.Cash1(10);
+                    try
+                    {
+                        if (bank.currentUser.CreditCard.Balance < 10)
+                        {
+                            throw new Exception("Have Not Enough Money For Cash");
+                        }
+                    }
+                    catch (Exception ex ) {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
-                else if (choiser == 2 && bank.currentUser.CreditCard.Balance >= 20)
+                else if (choiser == 2 )
                 {
+                    try
+                    {
+                        if (bank.currentUser.CreditCard.Balance < 20)
+                        {
+                            throw new Exception("Have Not Enough Money For Cash");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                     Console.Clear();
                     bank.Cash1(20);
                 }
-                else if (choiser == 3 && bank.currentUser.CreditCard.Balance >= 50)
+                else if (choiser == 3 )
                 {
+                    try
+                    {
+                        if (bank.currentUser.CreditCard.Balance < 50)
+                        {
+                            throw new Exception("Have Not Enough Money For Cash");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                     Console.Clear();    
                     bank.Cash1(50);
                 }
-                else if (choiser == 4 && bank.currentUser.CreditCard.Balance >= 100)
+                else if (choiser == 4)
                 {
+                    try
+                    {
+                        if (bank.currentUser.CreditCard.Balance < 100 || bank.currentUser.CreditCard.Balance == 0)
+                        {
+                            throw new Exception("Have Not Enough Money For Cash");
+                        }
+                    }
+                    catch (Exception ex1)
+                    {
+                        Console.WriteLine(ex1.Message);
+                    }
                     Console.Clear();
                     bank.Cash1(100);
                 }
                 else if (choiser == 5)
                 {
                     Console.Clear();
-                    amount = decimal.Parse(Console.ReadLine());
-                    Console.WriteLine("How Much Money :");
-                    if (bank.currentUser.CreditCard.Balance >= amount && bank.currentUser.CreditCard is not null)
+                    try
                     {
-                        bank.Cash1(amount);
+                        Console.Write("How Much Money :");
+                        amount1 = decimal.Parse(Console.ReadLine());
+                        if (amount1 > bank.currentUser.CreditCard.Balance)
+                        {
+                            throw new Exception("Have Not Enough Money");
+                        }
+                        else
+                        {
+                            bank.Cash1(amount1);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
                     }
                 }
                 else if (choiser == 6)
                 {
                     Console.Clear();
                     bank.Logout();
+                    bank.ShowUsers();
                     goto login;
                 }
                 else

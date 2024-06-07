@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,18 +9,18 @@ namespace AtmHomework.Models
 {
     internal class Bank
     {
-        private readonly User[] users = [
+            readonly User[] users = [
             new User(name: "Arif", surname: "Rustamov -", amount: 500, year: 3),
             new User(name: "Tahir", surname: "Muslumov -", amount: 710, year: 2),
             new User(name: "Akif", surname: "Kamilli -", amount: 680, year: 1),
             new User(name: "Behram", surname: "Veliyev -", amount: 300, year: 3),
-            new User(name: "Islam", surname: "Poladov -", amount: 250, year: 7),
+            new User(name: "Israfil", surname: "Poladov -", amount: 250, year: 7),
             new User(name: "Bayram", surname: "Hemidli -", amount: 200, year: 8),
             new User(name: "Ruslan", surname: "Memmedov -", amount: 450, year: 4),
             ];
         public User? currentUser = null;
 
-        public void ShowAllUsers()
+        public void ShowUsers()
         {
             foreach (var user in users)
             {
@@ -40,19 +41,30 @@ namespace AtmHomework.Models
             throw new Exception("Wrong pin");
         }
 
-        public void Logout() => currentUser = null;
+        public void Logout() 
+        {
+            currentUser = null;
+        }
 
 
         public void Cash1(decimal amount)
         {
-            if (currentUser is null)
-                throw new Exception();
-            if (currentUser.CreditCard.Balance < amount)
-                throw new ArgumentException("Not enough money");
-
+            try
+            {
+                if (currentUser.CreditCard.Balance < amount)
+                    throw new Exception("Not enough money");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             currentUser.CreditCard.Balance -= amount;
-            Console.Write("Your Balance : ");
-            Console.WriteLine(currentUser.CreditCard.Balance);
+            if (currentUser.CreditCard.Balance > 0)
+            {
+                Console.Write("Your Balance : ");
+                Console.WriteLine(currentUser.CreditCard.Balance);
+            }
+        
         }
         public decimal GetBalance()
         {
@@ -65,6 +77,8 @@ namespace AtmHomework.Models
             {
                 Console.WriteLine(ex.Message);
             }
+            if(currentUser.CreditCard.Balance < 0)
+                currentUser.CreditCard.Balance = 0;
             return currentUser.CreditCard.Balance;
         }
         public void CardToCard(string? PanForCTC, decimal amount)
@@ -80,7 +94,7 @@ namespace AtmHomework.Models
                         Console.WriteLine("Successful Cart To Cart");
                         System.Threading.Thread.Sleep(2000);
                         Console.Clear();
-                        ShowAllUsers();
+                        ShowUsers();
                         continue;
                     }
                 }

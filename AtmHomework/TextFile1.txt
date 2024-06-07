@@ -1,8 +1,4 @@
-﻿Oxumali oldugunuz materiallar:
-http://people.cs.aau.dk/~normark/oop-csharp/html/notes/exceptions-note-exception-hier-cs.html
-
-https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions
-ATM (bankomat) program:
+﻿ATM (bankomat) program:
 
 1. Card adinda bir class yaradirsiniz hansi ki, asagidaki fieldleri* var:
    
@@ -40,5 +36,3 @@ ATM (bankomat) program:
     3. Kartdan karta kocurme
 
        3.1. Bu bolmenin secdiyiniz zaman hansi karta kocurme etmek istediyinizi sorusacaq (PAN i sorusaraq)
-
-   Eger daxil etdiyiniz PAN yoxdursa o zaman "bu PAN koda aid kart tapilmadi" yazilmalidir. Ve yeniden basa qayitmali ve sizden PIN kod daxil etmeyinizi istemelidir.

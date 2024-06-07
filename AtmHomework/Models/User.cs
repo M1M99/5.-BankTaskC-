@@ -8,9 +8,9 @@ namespace AtmHomework.Models
 {
     internal class User
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public Card CreditCard { get; set; }
+        public string Name;
+        public string Surname;
+        public Card CreditCard;
 
         public User(string name, string surname, int amount, int year)
         {

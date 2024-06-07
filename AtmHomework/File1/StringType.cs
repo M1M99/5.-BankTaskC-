@@ -3,7 +3,6 @@
     enum StringType
     {
         Numeric,
-        Alpha,
-        AlphaNumeric
+        Alpha
     }
 }

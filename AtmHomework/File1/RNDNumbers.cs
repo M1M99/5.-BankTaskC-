@@ -10,7 +10,7 @@ namespace AtmHomework.Helpers
     {
         private static readonly Random _random = new Random();
 
-        public static string GenerateString(int length, StringType type)
+        public static string Make_RND_Number(int length, StringType type)
         {
             string str = type switch
             {
@@ -27,6 +27,5 @@ namespace AtmHomework.Helpers
 
             return result;
         }
-
     }
 }

@@ -17,17 +17,18 @@ namespace AtmHomework.Models
 
         public Card(decimal amount, int year)
         {
-            Pan = RNDNumbers.GenerateString(16, StringType.Numeric);
-            Pin = RNDNumbers.GenerateString(4, StringType.Numeric);
-            CVC = RNDNumbers.GenerateString(3, StringType.Numeric);
+            Pan = RNDNumbers.Make_RND_Number(16, 0);
+            Pin = RNDNumbers.Make_RND_Number(4, 0);
+            CVC = RNDNumbers.Make_RND_Number(3, StringType.Numeric);
             Balance = amount;
             ExpireDate = DateTime.Now.AddYears(year).ToString($"MM/yy");
+            if (Balance < 0) {
+                Balance = 0;
+            }
         }
-
         public decimal getBalance() {
             return Balance;
         }
-
         public override string ToString()
         {
             return $"{Pan}  {Pin}  {CVC}  {ExpireDate}  {Balance}";
